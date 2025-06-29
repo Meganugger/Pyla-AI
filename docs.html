@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Pyla AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="Pyla AI Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="docs.html" class="nav-link active">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="devlogs.html" class="nav-link">Dev Logs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link discord-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                        Discord
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Documentation Content -->
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <h3>Quick Navigation</h3>
+            <ul class="docs-nav">
+                <li><a href="#what-is-pyla" data-section="0">What is Pyla AI?</a></li>
+                <li><a href="#getting-started" data-section="1">Getting Started</a></li>
+                <li><a href="#downloading" data-section="2">Downloading Resources</a></li>
+                <li><a href="#setup" data-section="3">Setting up Pyla AI</a></li>
+                <li><a href="#starting" data-section="4">Starting Pyla AI</a></li>
+                <li><a href="#how-to-use" data-section="5">How to use Pyla AI</a></li>
+                <li><a href="#features" data-section="6">Features</a></li>
+                <li><a href="#troubleshooting" data-section="7">Troubleshooting</a></li>
+                <li><a href="#bot-info" data-section="8">Bot Info</a></li>
+                <li><a href="#goal" data-section="9">Goal</a></li>
+                <li><a href="#gui" data-section="10">GUI</a></li>
+                <li><a href="#code" data-section="11">Code</a></li>
+            </ul>
+			
+            <div class="view-controls">
+    <h4>View Options</h4>
+    <button id="show-all-btn" class="view-btn active">Show All</button>
+    <button id="show-one-btn" class="view-btn">Show One by One</button>
+    <div class="navigation-controls" id="nav-controls" style="display: none;">
+    </div>
+</div>
+        </aside>
+
+        <main class="docs-content">
+            <header class="docs-header">
+                <h1>Welcome to the Pyla AI Documentation</h1>
+                <p>On this page, you will find guides and information about Pyla AI and how to use it for personal use. You can use the contents to the left (or above for mobile) to help you find the section you are looking for.</p>
+                <p>The pages are organized in order of most important information to the least important. We recommend going through the pages in order if you want to learn about using Pyla AI.</p>
+            </header>
+
+            <section id="what-is-pyla" class="docs-section">
+                <h2>What is Pyla AI?</h2>
+                <p>Pyla AI is a bot that plays Brawl Stars for you without you having to do anything. It can help you farm mastery and gain trophies up to a certain point.</p>
+                
+                <h3>See Pyla AI in Action</h3>
+                <div class="video-links">
+                    <a href="https://pyla-ai.pages.dev/videos/pyla-demo.mp4" class="video-link" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        Video of Pyla AI in action
+                    </a>
+                </div>
+
+                <h3>Install Requirements</h3>
+                <ul class="requirements-list">
+                    <li>Computer running Windows 10/11</li>
+                    <li>Python 3.11.9</li>
+                    <li>LDPlayer/Bluestacks (LDPlayer recommended)</li>
+                </ul>
+
+                <h3>Available Gamemodes</h3>
+                <ul class="gamemode-list">
+                    <li>3v3 gamemodes</li>
+                    <li>5v5 gamemodes</li>
+                </ul>
+            </section>
+
+            <section id="getting-started" class="docs-section">
+                <h2>Getting Started</h2>
+                <p>In this section, we will guide you through the initial setup process and how to use Pyla AI.</p>
+            </section>
+
+            <section id="downloading" class="docs-section">
+                <h2>Downloading Resources</h2>
+                <p>Before you can use Pyla AI, you need to download and install the following resources:</p>
+                
+                <div class="download-requirements">
+                    <h3>Install Requirements</h3>
+                    <ul>
+                        <li>Computer running Windows 10/11</li>
+                        <li>Python 3.11.9</li>
+                        <li>LDPlayer/Bluestacks (LDPlayer recommended)</li>
+                    </ul>
+                </div>
+
+                <div class="download-steps">
+                    <div class="download-step">
+                        <h4>1. Python 3.11.9</h4>
+                        <p>To get started, download Python 3.11.9 (required for running the Pyla AI program) from the <a href="https://www.python.org/downloads/release/python-3119/" class="docs-link" target="_blank" rel="noopener noreferrer">Official Python Website</a>.</p>
+                    </div>
+
+                    <div class="download-step">
+                        <h4>2. Android Emulator</h4>
+                        <p>Next, download LDPlayer or Bluestacks (preferably LDPlayer), which is the Android emulator responsible for running Brawl Stars: <a href="https://www.ldplayer.net/" class="docs-link" target="_blank" rel="noopener noreferrer">https://www.ldplayer.net/</a></p>
+                    </div>
+
+                    <div class="download-step">
+                        <h4>3. Pyla AI</h4>
+                        <p>Finally, download Pyla AI using the Download button in the navigation bar.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="setup" class="docs-section">
+                <h2>Setting up Pyla AI</h2>
+                <p>Once you have downloaded those files, you would need to install Python 3.11.9 and LDPlayer/Bluestacks, as well as configuring the Pyla AI files.</p>
+                
+                <div class="setup-section">
+                    <h3>Install Python 3.11.9</h3>
+                    <p>After downloading the Python 3.11.9 installer, double-click to open it. You will see the Python 3.11.9 setup window. Make sure you select <strong>"Use Admin Privileges"</strong> and <strong>"Add python.exe to path"</strong>. You can now select "Install Now". After installation, close the window.</p>
+                </div>
+
+                <div class="setup-section">
+                    <h3>LDPlayer</h3>
+                    <p>After you have downloaded LDPlayer 9, double click to open it. You will see an LDPlayer window with an install button. Click the install button, and wait for it to finish. After installation, close the window. LDPlayer should launch for you.</p>
+                </div>
+
+                <div class="setup-section">
+                    <h3>Pyla AI</h3>
+                    <p>Once Pyla AI is downloaded, unzip the file by double-clicking on it. You will see many different folders in the .zip file. Make a new folder, and name it something you will recognize as Pyla AI, for example, "Pyla AI". Copy everything from the .zip you downloaded, using Control + A to move it to the folder you have just created.</p>
+                </div>
+            </section>
+
+            <section id="starting" class="docs-section">
+                <h2>Starting Pyla AI</h2>
+                
+                <div class="starting-section">
+                    <h3>Starting Pyla for the first time</h3>
+                    <ul>
+                        <li>It will download the models required for running Pyla AI</li>
+                        <li>It may fetch updates from the Brawl Stars API for new brawlers</li>
+                    </ul>
+                </div>
+
+                <div class="starting-section">
+                    <h3>Running Pyla AI</h3>
+                    <p>Before doing anything, you must set your display screen zoom to <strong>100%</strong> in your PC settings. You can change it back when you are not using Pyla AI. After changing zoom settings, double click the "start.bat" file in the folder you have made for the Pyla AI files. It will open cmd and install the models, as well as running the app.</p>
+                    
+                    <div class="warning-box">
+                        <strong>Note:</strong> There will be some error messages upon the beginning of running the program. They aren't important and can't be hidden, so please ignore them.
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-to-use" class="docs-section">
+                <h2>How to use Pyla AI</h2>
+                
+                <div class="usage-section">
+                    <h3>Pyla Hub app</h3>
+                    <p>The start.bat will open a window called "Pyla Hub". This is the main control center where you can:</p>
+                    <ul>
+                        <li>Configure the bot with your preferred gamemode</li>
+                        <li>Select which emulator you're using</li>
+                        <li>Access additional customization settings</li>
+                        <li>Set timers for automated operation</li>
+                        <li>View match history and win rates for brawlers the bot has played</li>
+                    </ul>
+                </div>
+
+                <div class="usage-section">
+                    <h3>LDPlayer</h3>
+                    <p>Pyla AI needs you to run Brawl Stars on your PC, which is where LDPlayer comes in. LDPlayer is an Android Emulator that creates a virtual Android device on your computer. You'll need to install Brawl Stars from the Play Store within this emulator to allow the bot to interact with the game.</p>
+                </div>
+
+                <div class="usage-section">
+                    <h3>Instructions</h3>
+                    <ol class="instruction-list">
+                        <li><strong>Initial Setup:</strong> In the "Overview" tab of Pyla Hub, select your map orientation, gamemode, and emulator. You can also change the mastery madness amount according to the current event boost in the Additional Settings tab. Once everything is configured, click the "Start" button.</li>
+                        
+                        <li><strong>Brawler Selection:</strong> Pyla Hub will launch another window called "PylaAI". This is where you'll select which brawler you want the bot to play. You can add multiple brawlers to form a queue - the bot will automatically switch to the next brawler once the current one reaches its target goal.</li>
+                        
+                        <li><strong>Enter Brawler Data:</strong> A new window called "Enter Brawler Data" will appear. Here you'll need to input:
+                            <ul>
+                                <li>What you want the bot to push (Trophies or Mastery)</li>
+                                <li>The target amount of trophies/mastery to reach</li>
+                                <li>The brawler's current trophies</li>
+                                <li>The brawler's current mastery level</li>
+                                <li>The brawler's current win streak</li>
+                            </ul>
+                        </li>
+                        
+                        <li><strong>Access Brawl Stars:</strong> While the "Enter Brawler Data" window is open, switch to LDPlayer. If you haven't already, open the Play Store, sign in with your Google Account, and download Brawl Stars.</li>
+                        
+                        <li><strong>Check Brawler Stats:</strong> Open Brawl Stars and sign in with your Supercell account. Navigate to the brawler you want to push and check its current trophies, mastery, and win streak.</li>
+                        
+                        <li><strong>Complete Setup:</strong> Return to the "Enter Brawler Data" window and input the values you just checked. You can uncheck "Auto-pick Brawler in game" if you prefer to manually select your brawler instead of having the bot navigate to it automatically.</li>
+                        
+                        <li><strong>Configure Emulator Keys:</strong> Before starting the bot, you need to set up the keymapping in your emulator:
+                            <ul>
+                                <li><strong>Q</strong> on the Lobby's "Start" Button</li>
+                                <li class="warning-text">Note: It must also be on the exit match button otherwise the bot won't leave matches</li>
+                                <li><strong>E (e)</strong> on the Super button (NOT F (f))</li>
+                                <li><strong>H</strong> on the Hypercharge Button</li>
+                                <li><strong>G</strong> on the Gadget Button</li>
+                                <li>The movepad on the Movement joystick</li>
+                            </ul>
+                        </li>
+                        
+                        <li><strong>Start the Bot:</strong> Click "Submit" to close the data entry window. In the "PylaAI" window, click the "Start" button to begin the bot operation.</li>
+                    </ol>
+                    
+                    <div class="warning-box">
+                        <strong>Note:</strong> If you don't see the "Start" button, check if you've resized the window to be smaller than its original size. If the window appears cut off, you may need to adjust your PC's display zoom settings to 100%.
+                    </div>
+                    
+                    <p><strong>Don't like reading? Watch the video below for a quick guide on how to use Pyla AI:</strong></p>
+                    <div class="video-links">
+                        <a href="https://youtu.be/BL1plRilA2A" class="video-link" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                            Video Installation Tutorial
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="docs-section">
+                <h2>Features</h2>
+                <p>Pyla AI currently has the following features:</p>
+                
+                <ul class="features-list">
+                    <li>Movement</li>
+                    <li>Shooting with base and super attacks</li>
+                    <li>Gadget and Hypercharge</li>
+                    <li>Enemy Detection and Wall Detection (trained for 45 hours with over 100,000 images)</li>
+                    <li>Automatically starts and finishes games for you</li>
+                    <li>Unstuck Movement Delay</li>
+                    <li>Unstuck Duration</li>
+                    <li>Match History</li>
+                    <li>Bot Customization - Max IPS, Gadgets, GPU/CPU, Crash Detection, Wall Detection Confidence, and more</li>
+                </ul>
+            </section>
+
+            <section id="troubleshooting" class="docs-section">
+                <h2>Troubleshooting</h2>
+                <p>Solutions to common issues and problems.</p>
+                
+                <div class="troubleshooting-section">
+                    <h3>Common Issues</h3>
+                    
+                    <div class="issue-block">
+                        <h4>Bot won't move or attack:</h4>
+                        <p>Make sure you have configured the bot correctly.</p>
+                        
+                        <ul>
+                            <li><strong>Screen zoom:</strong> Make sure you have set the screen zoom to 100%, in your PC display settings.</li>
+                            <li><strong>Emulator keys:</strong> Make sure you have set up the keymapping (emulator keys) for the bot:
+                                <ul>
+                                    <li><strong>Q</strong> on the Lobby's "Start" Button</li>
+                                    <li class="warning-text">Note: It must also be on the exit match button otherwise the bot won't leave matches</li>
+                                    <li><strong>E (e)</strong> on the Super button (NOT F (f))</li>
+                                    <li><strong>H</strong> on the Hypercharge Button</li>
+                                    <li><strong>G</strong> on the Gadget Button</li>
+                                    <li>The movepad on the Movement joystick</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <div class="warning-box">
+                            <strong>Note:</strong> Be sure to have the buttons at their original position when using Pyla (In training camp - Edit Controls → Reset)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bot-info" class="docs-section">
+                <h2>Bot Info</h2>
+                <p>This section provides detailed technical information about how Pyla AI works, by iyordanov.</p>
+                
+                <div class="bot-info-section">
+                    <h3>Models</h3>
+                    <p>Pyla AI uses several specialized AI models to perform different functions within the game. Below is an explanation of each model and how it was trained.</p>
+                    
+                    <div class="warning-box">
+                        <strong>Note:</strong> The model documentation is based on the brawl-stars-bot repository.
+                    </div>
+                    
+                    <h4>Specific in-game data</h4>
+                    <ul>
+                        <li><strong>Detects:</strong> 79 brawlers + 750 skins + each skin/brawler abilities + 5 types of balls + gems + power cubes + poison clouds + walls + bushes</li>
+                        <li><strong>Reliability:</strong> 5.5/10</li>
+                        <li><strong>Maintenance:</strong> Very high</li>
+                    </ul>
+                    
+                    <p>The assets were 107,395 images and the dataset was 100k images.</p>
+                    
+                    <h4>Why so much?</h4>
+                    <p>Each brawler has around 40 angles from which you can see them, plus extra angles when shooting, and extra angles while moving and shooting. This quickly stacks up.</p>
+                    
+                    <h4>How did I manage to get all the assets:</h4>
+                    <p>There are no assets for this online so I had to the following:</p>
+                    <ol>
+                        <li>Code a script which goes into a game and makes screenshots of each angle of the brawler.</li>
+                        <li>Train a model to crop out the brawler from the image</li>
+                        <li>Train a model to segment the brawler out of the image</li>
+                        <li>Get other in-game assets - Will skip this as it's just me manually going over every single map and becoming a Photoshop dev</li>
+                        <li>Build a dataset generator with the assets</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="goal" class="docs-section">
+                <h2>Goal</h2>
+                <p>Understanding the purpose and motivation behind Pyla AI.</p>
+                
+                <div class="goal-section">
+                    <h3>Purpose</h3>
+                    <p>The goal of Pyla AI is to help players progress faster before they quit the game due to low-level brawlers making them lose every game.</p>
+                    
+                    <h3>The Progression Problem</h3>
+                    <p>For those unfamiliar with Brawl Stars, here's the issue:</p>
+                    <p>Each brawler has two primary stats: Health and Attack. The leveling system works as follows:</p>
+                    
+                    <ul>
+                        <li><strong>Level 1 → 9:</strong> 3,090 coins</li>
+                        <li><strong>Level 9 → 11:</strong> 4,675 coins</li>
+                        <li><strong>Level 7 unlocks gadgets:</strong> 1,000 × 2 coins</li>
+                        <li><strong>Level 9 unlocks star powers and gears:</strong> 2,000 × 2 coins, 1,000 × 6 coins</li>
+                        <li><strong>Level 11 unlocks hyper charges:</strong> 5,000 coins</li>
+                    </ul>
+                    
+                    <p>To have a maxed account (all brawlers at level 11 with at least 1 star power, 1 gadget, and 2 gears), you need:</p>
+                    <div class="highlight-stat">1,046,730 coins</div>
+                    
+                    <h3>Free-to-Play Progression</h3>
+                    <p>An active free-to-play player will have the following monthly rewards:</p>
+                    
+                    <div class="progression-block">
+                        <h4>3 Star Drops a Day</h4>
+                        <ul>
+                            <li><strong>Progression:</strong> Average 7,740 coins</li>
+                            <li><strong>Time to complete:</strong> Average 12 hours</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="progression-block">
+                        <h4>Complete Brawl Pass</h4>
+                        <ul>
+                            <li><strong>Progression:</strong> 8,000 coins</li>
+                            <li><strong>Time to complete:</strong> 30 hours</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="progression-block">
+                        <h4>Farm Mastery</h4>
+                        <p>(Possible for 2 months and 6 days)</p>
+                        <ul>
+                            <li><strong>Progression:</strong> 86,250 coins</li>
+                            <li><strong>Time to complete:</strong> 120 hours</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Conclusion</h3>
+                    <p>If a player spends roughly 35 hours a month planning perfectly what and how to play, and is at 56,700 trophies, they will gain:</p>
+                    <p>(7740+8000)×1.2 + 1863 + [(86250/120) × 35] coins a month, which is:</p>
+                    <div class="highlight-stat">20,751 + 25,156 (the first 2 months).</div>
+                    
+                    <h3>Time to Max Account</h3>
+                    <div class="highlight-warning">
+                        This means it would take <strong>4 YEARS</strong> for a free-to-play player to max their account.
+                    </div>
+                    
+                    <h3>Motivation</h3>
+                    <p>Pyla AI was created because the amount of grind is absurd. It takes 35 boring hours each month to grind, and then you can actually have fun. Many players don't have that kind of time. The only solution for busy people is to buy the Brawl Pass Plus, play 7 hours a month, and spend 3-4 hours on the last day completing quests.</p>
+                </div>
+            </section>
+
+            <section id="gui" class="docs-section">
+                <h2>GUI</h2>
+                <p>Learn about the graphical user interface of Pyla AI.</p>
+                
+                <div class="gui-section">
+                    <h3>Main app</h3>
+                    <p>This is the main app for the bot. It is currently not used as a lot of functionality of the bot have been changed as the first version didn't use A.I.. However, the design will be integrated into the new version.</p>
+                    
+                    <h3>Temporary app</h3>
+                    <p>This app is a lot simpler.</p>
+                    <ul>
+                        <li><strong>api.py:</strong> Contains all logic for calling the backend API</li>
+                        <li><strong>login.py:</strong> Simple window with an input and submit button which checks if the user's key is valid</li>
+                        <li><strong>select_brawler.py:</strong> What the user sees once logged in. In this menu, the user selects the brawlers the bot will play</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="code" class="docs-section">
+                <h2>Code</h2>
+                <p>Understanding the technical implementation of Pyla AI.</p>
+                <p>This documentation aims to give you a rough idea of how the bot works without showing too much code, as it is private, but still giving you enough information to understand its functionality.</p>
+                
+                <div class="code-section">
+                    <h3>Navigation</h3>
+                    <p>To understand the code in the best way, explore these components in order:</p>
+                    <ul>
+                        <li><strong>Graph</strong> - Diagram showing the code logic flow</li>
+                        <li><strong>State finder</strong> - Identifies the current game state</li>
+                        <li><strong>State manager</strong> - Automates actions based on the current game state</li>
+                        <li><strong>Progress Observer</strong> - Keeps track of progress after each game to swap brawlers once specific goals are reached</li>
+                        <li><strong>Lobby automator</strong> - Automates more complicated actions inside the lobby</li>
+                        <li><strong>Detect</strong> - Transforms YOLOv8 output into an easier to use format</li>
+                        <li><strong>Movement</strong> - Finds the best movement with the detected data</li>
+                        <li><strong>Play</strong> - Main playing logic that inherits Movement and adds extra functionality</li>
+                        <li><strong>Time Management</strong> - Helps determine whether time thresholds have been reached for various activities</li>
+                        <li><strong>Main</strong> - Core component that initializes all classes and controls how everything works together</li>
+                        <li><strong>Screenshot Taker</strong> - Captures screenshots for the bot to process</li>
+                    </ul>
+                    
+                    <div class="code-component">
+                        <h4>State finder</h4>
+                        <p><strong>Purpose:</strong> Identify the current game state</p>
+                        <p><strong>Used in:</strong> State Manager</p>
+                        <p><strong>How it works:</strong><br>
+                        It uses template matching to compare parts of the screen to predefined images to identify specific game states. This method is quick and efficient because the lobby layout is static and rarely changes.</p>
+                        <p>This is how the lobby looks after a game is over, and it hasn't changed in years. So we can find the state is 'end_game_lobby' by looking for the red thumbs down button.</p>
+                    </div>
+                    
+                    <div class="code-component">
+                        <h4>Time Management</h4>
+                        <p><strong>Purpose:</strong> This class helps in determining whether specific time thresholds have been reached for various activities or states, ensuring that actions are taken at appropriate intervals.</p>
+                        <p><strong>Used in:</strong> Main</p>
+                        <p><strong>How it works:</strong><br>
+                        It keeps a record of the last time each action happened and checks if enough time has passed to perform the action again. If the time threshold is met, it updates the record to the current time.</p>
+                    </div>
+                    
+                    <div class="code-component">
+                        <h4>Main</h4>
+                        <p><strong>Purpose:</strong> The Main class is the core part of the application. It initializes all classes, loads the models, and controls how everything works together.</p>
+                        <p>The bot plays brawlers in the order the user picked them. Once the wanted progression is reached, it will move to the next brawler.</p>
+                    </div>
+                    
+                    <div class="code-component">
+                        <h4>Screenshot Taker</h4>
+                        <p><strong>Purpose:</strong> Return an image of the screen in PIL format</p>
+                        <p><strong>Used in:</strong> LobbyAutomation, Main</p>
+                        <p><strong>How it works:</strong><br>
+                        Initializes with a "camera" object from the "DXCam" library. Sometimes "DXCam" returns None images, which breaks the code. The take method ensures the image cannot be None.</p>
+                    </div>
+                    
+                    <div class="repo-links">
+                        <a href="https://github.com/PylaAI/PylaAI" class="repo-card" target="_blank" rel="noopener noreferrer">
+                            <h4>Official Pyla AI Source Code</h4>
+                            <p>The complete source code for the latest public version of Pyla AI.</p>
+                            <span class="repo-link">github.com/PylaAI/PylaAI</span>
+                        </a>
+                        
+                        <a href="https://github.com/AngelFireLA/BrawlStarsBotMaking" class="repo-card" target="_blank" rel="noopener noreferrer">
+                            <h4>Brawl Stars Bot Making Resources</h4>
+                            <p>A repository containing all the resources, tutorials, and information you need to create your very own external Brawl Stars bot.</p>
+                            <span class="repo-link">github.com/AngelFireLA/BrawlStarsBotMaking</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
